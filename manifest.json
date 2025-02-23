@@ -4,12 +4,7 @@
     "version": "1.0",
     "description": "Automatically sets DoorDash tip to a preconfigured value",
     "permissions": [
-        "storage",
-        "activeTab",
-        "scripting"
-    ],
-    "host_permissions": [
-        "https://*.doordash.com/*"
+        "storage"
     ],
     "content_scripts": [
         {
