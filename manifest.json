@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "DoNotTip",
+    "version": "1.0",
+    "description": "Automatically sets DoorDash tip to a preconfigured value",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://*.doordash.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://*.doordash.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "DNT_icon.jpg"
+    }
+}
